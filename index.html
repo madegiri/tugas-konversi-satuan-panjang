@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Konversi Satuan Panjang</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Konversi Satuan Panjang</h1>
+
+      <div class="input-container">
+        <label for="meterInput">Meter :</label>
+        <input
+          type="number"
+          id="meterInput"
+          placeholder="Masukkan nilai dalam meter"
+        />
+      </div>
+      <div class="input-container">
+        <label for="millimeterInput">Millimeter :</label>
+        <input
+          type="number"
+          id="millimeterInput"
+          placeholder="Masukkan nilai dalam milimeter"
+        />
+      </div>
+      <div class="button-container">
+        <button onclick="convertToMillimeters()">Konversi Ke Millimeter</button>
+        <button onclick="convertToMeters()">Konversi Ke Meter</button>
+        <button onclick="resetFields()">Reset</button>
+      </div>
+      <div class="result-container">
+        <p id="resultMillimeters"></p>
+        <p id="resultMeters"></p>
+      </div>
+    </div>
+
+    <div class="nama">
+      <p>by Made Dharmagiri</p>
+    </div>
+  </body>
+</html>
